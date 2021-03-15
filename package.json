@@ -1,0 +1,17 @@
+{
+  "name": "site_monitor",
+  "version": "0.1.0",
+  "description": "Site monitor script",
+  "main": "main.js",
+  "author": "Serhat",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "node main.js"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "discord.js": "^12.5.1",
+    "dotenv": "^8.2.0"
+  }
+}
