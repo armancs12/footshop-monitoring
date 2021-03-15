@@ -5,6 +5,8 @@ const WEBHOOK_ID = process.env.WEBHOOK_ID;
 const WEBHOOK_TOKEN = process.env.WEBHOOK_TOKEN;
 
 const EMBED_COLOR = "#58b9ff";
+const USERNAME = "Market Change Notifier";
+const AVATAR_URL = "https://static.footshop.com/453604-full_product/110737.jpg";
 
 let webHookClient = null;
 
@@ -12,8 +14,8 @@ function notifyServer(product, message) {
   const client = getWebhookClient();
   const embed = createEmbed(product, message);
   webHookClient.send("", {
-    username: "change-notifier",
-    avatarURL: "https://i.imgur.com/wSTFkRM.png",
+    username: USERNAME,
+    avatarURL: AVATAR_URL,
     embeds: [embed],
   });
 }
